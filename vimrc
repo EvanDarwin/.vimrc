@@ -1,9 +1,11 @@
+colorscheme elflord
 
-colorscheme molokai
 
-" change some theme color settings
-let g:monokai_original = 1
-let g:rehash256 = 1
+" GitGutter configuration.
+"
+" Eager loading.
+let g:gitgutter_realtime = 1
+let g:gitgutter_eager = 1
 
 " Set up our Zen/Goyo key
 nnoremap <C-\> :Goyo<CR>
@@ -16,5 +18,5 @@ call plug#begin('~/.vim/plugged')
 
 " https://github.com/junegunn/goyo.vim
 Plug 'junegunn/goyo.vim'
-
+Plug 'airblade/vim-gitgutter'
 call plug#end()
