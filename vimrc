@@ -19,4 +19,7 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/junegunn/goyo.vim
 Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
 call plug#end()
+
+let g:airline#extensions#tabline#enabled = 1
