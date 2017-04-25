@@ -28,6 +28,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'dracula/vim'
 Plug 'junegunn/limelight.vim'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'emgram769/vim-multiuser'
 
 call plug#end()
 
