@@ -6,6 +6,7 @@ let g:gitgutter_eager = 1
 
 " Set up our Zen/Goyo key
 nnoremap <C-G> :Goyo<CR>
+nnoremap <C-T> :NERDTree<CR>
 
 "
 " vim-plug setup.
@@ -29,6 +30,7 @@ Plug 'dracula/vim'
 Plug 'junegunn/limelight.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'emgram769/vim-multiuser'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
 
@@ -36,8 +38,8 @@ set laststatus=2    " Enable airline (https://github.com/vim-airline/vim-airline
 set ttimeoutlen=50  " 
 set number          " Line numbers
 set smartindent     " Smart indentation
-set tabstop=2       " Backspace chars deleted
-set shiftwidth=2    " Tab width
+set tabstop=4       " Backspace chars deleted
+set shiftwidth=4    " Tab width
 set expandtab       " Convert tabs to spaces
 set incsearch       " Immediate search matching
 
