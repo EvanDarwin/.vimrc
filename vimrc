@@ -24,6 +24,7 @@ Plug 'tpope/vim-surround'
 Plug 'evidens/vim-twig'
 Plug 'othree/yajs.vim'
 Plug 'othree/es.next.syntax.vim'
+Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'scrooloose/nerdtree'
 Plug 'dracula/vim'
@@ -49,6 +50,9 @@ map <C-K> <C-W>k
 
 " Configure airline
 let g:airline#extensions#tabline#enabled = 1
+
+" Configure addl. filenames for vim-closetag
+let g:closetag_filenames = "*.html,*.xhtml,*.liquid,*.jinja2"
 
 " Configure limelight
 let g:limelight_conceal_ctermcfg = 'gray'
