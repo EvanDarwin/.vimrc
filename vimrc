@@ -8,6 +8,12 @@ let g:gitgutter_eager = 1
 nnoremap <C-G> :Goyo<CR>
 nnoremap <C-T> :NERDTree<CR>
 
+" Force unix line endings
+setlocal ff=unix
+
+" Set 256 Color Terminal
+set t_Co=256
+
 "
 " vim-plug setup.
 " Much faster than Vundle.
@@ -32,6 +38,9 @@ Plug 'junegunn/limelight.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'emgram769/vim-multiuser'
 Plug 'alvan/vim-closetag'
+Plug 'mxw/vim-jsx'
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'JarrodCTaylor/vim-256-color-schemes'
 
 call plug#end()
 
@@ -52,12 +61,15 @@ map <C-K> <C-W>k
 let g:airline#extensions#tabline#enabled = 1
 
 " Configure addl. filenames for vim-closetag
-let g:closetag_filenames = "*.html,*.xhtml,*.liquid,*.jinja2"
+let g:closetag_filenames = "*.html,*.xhtml,*.liquid,*.jinja2,*.jsx"
 
 " Configure limelight
 let g:limelight_conceal_ctermcfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
-let g:limelight_paragraph_span = 2
+let g:limelight_paragraph_span = 1 
+
+" Enable spell checking
+setlocal spell spelllang=en_us
 
 " Set the color scheme to ayu
-colorscheme dracula
+colorscheme understated
